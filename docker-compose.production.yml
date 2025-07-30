@@ -1,0 +1,23 @@
+version: '3.9'
+
+services:
+  homepage.next:
+    image: registry.git.flo-lan.com/flo-lan/homepage/${IMAGE_TAG}
+    container_name: homepage.next
+    hostname: homepage.next
+    restart: unless-stopped
+    ports:
+      - 3004:3000
+    environment:
+      - NODE_ENV=production
+      - MAIL_HOST=homepage.smtp
+      - MAIL_PORT=25
+      - MAIL_FROM=contact@coderain.at
+      - MAIL_TO=contact@coderain.at
+      - MAIL_USER=user
+      - MAIL_PWD=password
+  homepage.smtp:
+    image: namshi/smtp
+    hostname: homepage.smtp
+    container_name: homepage.smtp
+    restart: unless-stopped

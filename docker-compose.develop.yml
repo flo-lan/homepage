@@ -1,0 +1,32 @@
+version: '3.9'
+
+services:
+  homepage-dev.next:
+    image: registry.git.flo-lan.com/flo-lan/homepage/${IMAGE_TAG}
+    container_name: homepage-dev.next
+    hostname: homepage-dev.next
+    restart: unless-stopped
+    ports:
+      - 3003:3000
+    links:
+      - homepage-dev.mailhog:mailhog-dev
+    depends_on:
+      homepage-dev.mailhog:
+        condition: service_started
+    environment:
+      - NODE_ENV=development
+      - MAIL_HOST=mailhog-dev
+      - MAIL_PORT=1025
+      - MAIL_SECURE=false
+      - MAIL_FROM=contact@coderain.at
+      - MAIL_TO=contact@coderain.at
+      - MAIL_USER=user
+      - MAIL_PWD=password
+  homepage-dev.mailhog:
+    hostname: mailhog-dev
+    container_name: homepage-dev.mailhog
+    image: mailhog/mailhog:latest
+    restart: unless-stopped
+    ports:
+      - '1027:1025'
+      - '8027:8025'

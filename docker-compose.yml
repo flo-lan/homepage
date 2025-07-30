@@ -1,0 +1,35 @@
+version: '3.9'
+
+services:
+  homepage.next:
+    container_name: homepage.next
+    hostname: homepage.next
+    build:
+      context: .
+      dockerfile: Dockerfile.develop
+    restart: unless-stopped
+    ports:
+      - 3003:3000
+    links:
+      - homepage.mailhog:mailhog
+    volumes:
+      - "./:/app"
+    depends_on:
+      homepage.mailhog:
+        condition: service_started
+    environment:
+      - NODE_ENV=development
+      - MAIL_HOST=mailhog
+      - MAIL_PORT=1025
+      - MAIL_FROM=contact@coderain.at
+      - MAIL_TO=contact@coderain.at
+      - MAIL_USER=user
+      - MAIL_PWD=password
+  homepage.mailhog:
+    hostname: mailhog
+    container_name: homepage.mailhog
+    image: mailhog/mailhog:latest
+    restart: unless-stopped
+    ports:
+      - '1025:1025'
+      - '8025:8025'
