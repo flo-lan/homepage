@@ -23,7 +23,12 @@ const Company = (): ReactElement => (
     <div className="">
       <div>
         <div className="relative " style={{ height: '400px' }}>
-          <Image src="/team.png" alt="team" layout="fill" objectFit="contain" />
+          <Image
+            src="/team.png"
+            alt="team"
+            fill
+            style={{ objectFit: 'contain' }}
+          />
         </div>
         <span className="flex justify-center">
           <a

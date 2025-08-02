@@ -1,9 +1,14 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import { useRouter } from 'next/router'
-import React, { FunctionComponent, useEffect, useState } from 'react'
+import React, {
+  FunctionComponent,
+  PropsWithChildren,
+  useEffect,
+  useState,
+} from 'react'
 
-const Navbar: FunctionComponent = (props) => {
+const Navbar: FunctionComponent = (props: PropsWithChildren) => {
   const { children } = props
 
   const router = useRouter()

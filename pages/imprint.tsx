@@ -38,8 +38,8 @@ const Portfolio: NextPage = () => (
                 <Image
                   src="/mail_black.png"
                   alt="mail"
-                  layout="fill"
-                  objectFit="contain"
+                  fill
+                  style={{ objectFit: 'contain' }}
                 />
               </div>
             </td>

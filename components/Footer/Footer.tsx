@@ -34,7 +34,12 @@ const Footer = (): ReactElement => (
       <div>
         <span className="footer-title">Socials</span>
         <div className="grid grid-flow-col gap-4">
-          <a href="https://www.linkedin.com/company/coderain-modern-software-solutions">
+          <a
+            href="https://www.linkedin.com/company/coderain-modern-software-solutions"
+            aria-label="LinkedIn"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <svg
               className="fill-white"
               xmlns="http://www.w3.org/2000/svg"
@@ -46,8 +51,14 @@ const Footer = (): ReactElement => (
             </svg>
           </a>
         </div>
+
         <div className="relative " style={{ height: '33px', width: '164px' }}>
-          <Image src="/mail.png" alt="mail" layout="fill" objectFit="contain" />
+          <Image
+            src="/mail.png"
+            alt="mail"
+            fill
+            style={{ objectFit: 'contain' }}
+          />
         </div>
       </div>
     </footer>

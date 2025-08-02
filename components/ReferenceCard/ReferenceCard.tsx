@@ -32,7 +32,7 @@ const ReferenceCard = (props: ReferenceCardProps): ReactElement => {
         className="card  bg-base-100 shadow-xl
     transition ease-in-out hover:-translate-y-3"
       >
-        <figure>
+        <figure style={{ height: '150px' }}>
           <Image src={imgSrc} alt={alt} height={150} width={300} />
         </figure>
         <div className="card-body">
