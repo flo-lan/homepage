@@ -1,5 +1,6 @@
 import { Locale, useLocale } from 'next-intl'
 import Link from 'next/link'
+import { usePathname } from 'next/navigation'
 
 interface LocaleData {
   label: string
@@ -18,6 +19,15 @@ const locales: Locales = {
 
 export default function LocaleSwitcher() {
   const currentLocale = useLocale()
+  const currentPath = usePathname()
+
+  function stripLocale(pathname: string) {
+    const segments = pathname.split('/')
+    if (Object.keys(locales).includes(segments[1])) {
+      segments.splice(1, 1) // remove the current locale
+    }
+    return segments.join('/') || '/'
+  }
 
   return (
     <div className="dropdown dropdown-end">
@@ -49,10 +59,9 @@ export default function LocaleSwitcher() {
           <li className="hover:bg-primary">
             <Link
               key={locale}
-              href={locale}
+              href={`/${locale}${stripLocale(currentPath)}`}
               locale={locale}
               scroll={false}
-              style={{}}
             >
               {locales[locale].flag} {locales[locale].label}
             </Link>
