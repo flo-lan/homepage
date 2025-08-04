@@ -9,6 +9,7 @@ import React, {
   useEffect,
   useState,
 } from 'react'
+import LanguageSwitcher from '../LanguageSwitcher/LanguageSwitcher'
 
 const Navbar: FunctionComponent = (props: PropsWithChildren) => {
   const { children } = props
@@ -86,15 +87,22 @@ const Navbar: FunctionComponent = (props: PropsWithChildren) => {
           <div className="flex-none hidden lg:block pr-10">
             <ul className="menu menu-horizontal">
               <li>
-                <Link href="/#services">Services</Link>
+                <Link className="link link-hover" href="/#services">
+                  Services
+                </Link>
               </li>
               <li>
-                <Link href="/#portfolio">Portfolio</Link>
+                <Link className="link link-hover" href="/#portfolio">
+                  Portfolio
+                </Link>
               </li>
               <li>
-                <Link href="/#contact">Kontakt</Link>
+                <Link className="link link-hover" href="/#contact">
+                  Kontakt
+                </Link>
               </li>
             </ul>
+            <LanguageSwitcher />
           </div>
         </div>
         {children}
