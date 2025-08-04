@@ -119,6 +119,7 @@ const Navbar: FunctionComponent = (props: PropsWithChildren) => {
           <li>
             <Link href="/#contact">Kontakt</Link>
           </li>
+          <LanguageSwitcher />
         </ul>
       </div>
     </div>
