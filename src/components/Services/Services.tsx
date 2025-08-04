@@ -1,3 +1,5 @@
+'use client'
+
 import React, { ReactElement, useState } from 'react'
 import { ServicePages } from './Services.types'
 import ServicesMenu from './ServicesMenu'
@@ -14,7 +16,11 @@ const Services = (): ReactElement => {
         <div className="col-span-2 prose pb-12">
           <h1>Unsere Services</h1>
         </div>
-        <ServicesMenu onMenuClick={(index: number) => setSelectedMenu(index)} />
+        <ServicesMenu
+          onMenuClick={(servicePage: ServicePages) =>
+            setSelectedMenu(servicePage)
+          }
+        />
 
         {selectedMenu === ServicePages.WebApps && (
           <>

@@ -1,6 +1,8 @@
+'use client'
+
 import Image from 'next/image'
 import Link from 'next/link'
-import { useRouter } from 'next/router'
+import { usePathname } from 'next/navigation'
 import React, {
   FunctionComponent,
   PropsWithChildren,
@@ -11,7 +13,7 @@ import React, {
 const Navbar: FunctionComponent = (props: PropsWithChildren) => {
   const { children } = props
 
-  const router = useRouter()
+  const pathname = usePathname()
   const [scrolled, setScrolled] = useState(false)
 
   useEffect(() => {
@@ -35,7 +37,7 @@ const Navbar: FunctionComponent = (props: PropsWithChildren) => {
     }
   }, [scrolled])
 
-  const showNavbackground = scrolled || router.pathname !== '/'
+  const showNavbackground = scrolled || pathname !== '/'
 
   return (
     <div className="drawer h-screen w-full">

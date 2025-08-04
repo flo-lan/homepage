@@ -1,8 +1,10 @@
-import React, { ReactElement } from 'react'
-import { useForm } from 'react-hook-form'
-import toast, { Toaster } from 'react-hot-toast'
+'use client'
 
-import axiosService from '../../utils/axiosService'
+import React, { ReactElement } from 'react'
+import toast, { Toaster } from 'react-hot-toast'
+import { useForm } from 'react-hook-form'
+
+import axiosService from '../../../utils/axiosService'
 
 interface FormData {
   firstName: string
@@ -37,6 +39,7 @@ const ContactForm = (): ReactElement => {
         toast.error('E-Mail Versand fehlgeschlagen')
       }
     } catch (e) {
+      console.error(e)
       toast.error('E-Mail Versand fehlgeschlagen')
     }
   }

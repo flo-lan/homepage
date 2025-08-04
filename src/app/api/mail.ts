@@ -22,6 +22,7 @@ export default async function handler(
     <p><b>Anfrage: </b>${message}</b></p></div>`,
     })
   } catch (e) {
+    console.error(e)
     res.status(500).json({ success: false })
     return
   }

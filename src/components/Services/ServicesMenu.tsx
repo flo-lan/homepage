@@ -2,7 +2,7 @@ import React, { ReactElement, useState } from 'react'
 import { ServicePages } from './Services.types'
 
 interface ServicesMenuProps {
-  onMenuClick: (index: number) => void
+  onMenuClick: (servicePage: ServicePages) => void
 }
 
 const ServicesMenu = (props: ServicesMenuProps): ReactElement => {
