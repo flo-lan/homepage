@@ -1,5 +1,107 @@
 {
+  "Layout": {
+    "navbar": {
+      "services": "Services",
+      "portfolio": "Portfolio",
+      "contact": "Contact"
+    },
+    "footer": {
+      "tagline": "Modern Software Solutions",
+      "company": "Firma",
+      "aboutUs": "About us",
+      "portfolio": "Portfolio",
+      "contact": "Contact",
+      "legal": "Rechtliches",
+      "imprint": "Imprint",
+      "socials": "Socials",
+      "copyright": "All rights reserved © 2022 Florian Langeder"
+    }
+  },
+  "Imprint": {
+    "title": "Impressum",
+    "companyTitle": "Firma",
+    "company": "Coderain e.U.",
+    "address": {
+      "street": "Claretinergasse 3/3/9",
+      "cityPostCode": "1220 Wien",
+      "country": "Österreich"
+    },
+    "emailTitle": "Email",
+    "ownerTitle": "Geschäftsführer",
+    "owner": "Florian Langeder, BSc",
+    "registerNumberTitle": "Firmenbuchnummer",
+    "registerNumber": "FN581196a",
+    "vatIdTitle": "UID-Nummer",
+    "vatId": "ATU78157913",
+    "registerCourtTitle": "Firmenbuchgericht",
+    "registerCourt": "Handelsgericht Wien",
+    "businessActivityTitle": "Gewerbe",
+    "businessActivity": "IT-Dienstleistungen",
+    "tradeRegulationsTitle": "Gewerbeordnung",
+    "tradeRegulations": "ris.bka.gv.at",
+    "bank": {
+      "title": "Bankverbindung",
+      "bankName": "Erste Bank der oesterreichischen Sparkassen AG",
+      "iban": "AT24 2011 1841 4636 9100",
+      "bic": "GIBAATWWXXX"
+    },
+    "copyright": "© 2022 Florian Langeder — Alle Rechte vorbehalten."
+  },
   "HomePage": {
-    "contact": "Contact"
+    "sections": {
+      "titleCard": {
+        "tagline": "Modern Software Solutions",
+        "learnMore": "Mehr erfahren"
+      },
+      "services": {
+        "title": "Unsere Services",
+        "webApps": {
+          "title": "Web‑Apps",
+          "description": "Wir entwickeln Enterprise Software auf Basis von State-of-the-Art Technologien um ihre Prozesse effizienter und angenehmer zu gestalten. Von Backend Programmierung mit Hosting + Deployment bis zu einer zugänglichen Browseranwendung sind wir bemüht maßgeschneiderte und vollständige Lösungen anzubieten.",
+          "technologiesTitle": "Technologien",
+          "features": [
+            "Rapid Prototyping",
+            "Responsive Design",
+            "SEO Optimierung"
+          ]
+        },
+        "mobileApps": {
+          "title": "Mobile Apps",
+          "description": "Mittels Platform-agnostischen Frameworks entwickeln wir in Rekordzeit native Apps für iOS und Android Geräte und sparen zusätzlich viel Zeit, der in die Wartung separater Software je nach Platform anfallen würde. Von Produktivitäts bis zu Unterhaltungs-Apps hören wir uns gerne gespannt Ihre Ideen an.",
+          "technologiesTitle": "Technologien"
+        }
+      },
+      "portfolio": {
+        "title": "Portfolio",
+        "projects": {
+          "neubauprojekte": {
+            "name": "neubauprojekte.wien",
+            "tags": ["Responsive Web-App", "Deployment"]
+          },
+          "grundbuchauszug": {
+            "name": "grundbuch-auszug.at",
+            "tags": ["Shop system integration", "Backend"]
+          }
+        },
+        "note": "Weitere Referenzen auf Anfrage"
+      },
+      "about": {
+        "title": "Moderne Software-Dienstleistungen",
+        "content": {
+          "paragraph1": "Durch aktuelle Standards und stetiger Weiterbildung bieten wir einfach wartbare Lösungen an und verringern kümmern uns somit um den Bedarf von stetiger Neuentwicklung von bereits funktionierenden Systemen.",
+          "paragraph2": "Wir hören uns gerne Ihre Projektanforderungen an, ob klein oder umfangreich, bzw. Neuentwicklung oder Instandthaltung."
+        }
+      },
+      "contact": {
+        "title": "Kontaktformular",
+        "fields": {
+          "firstName": "Vorname",
+          "lastName": "Nachname",
+          "email": "E-Mail",
+          "message": "Nachricht"
+        },
+        "send": "Senden"
+      }
+    }
   }
 }

@@ -37,7 +37,7 @@ const Home: NextPage = () => {
         <div className="p-8 md:p-20">
           <div className="flex justify-end">
             <div className="prose pb-12">
-              <h1>{t('contact')}</h1>
+              <h1>{t('sections.contact.title')}</h1>
             </div>
           </div>
           <div className="flex justify-center">

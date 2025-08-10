@@ -5,6 +5,7 @@ import toast, { Toaster } from 'react-hot-toast'
 import { useForm } from 'react-hook-form'
 
 import axiosService from '../../../utils/axiosService'
+import { useTranslations } from 'next-intl'
 
 interface FormData {
   firstName: string
@@ -22,6 +23,8 @@ const ContactForm = (): ReactElement => {
   } = useForm<FormData>({
     mode: 'onChange',
   })
+
+  const t = useTranslations('HomePage.sections.contact')
 
   const onSubmit = async (data: FormData) => {
     const { firstName, lastName, email, message } = data
@@ -53,7 +56,7 @@ const ContactForm = (): ReactElement => {
       onClick={handleSubmit(onSubmit)}
       disabled={Object.keys(errors).length !== 0}
     >
-      Send
+      {t('send')}
     </button>
   )
 
@@ -66,7 +69,7 @@ const ContactForm = (): ReactElement => {
               className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
               htmlFor="grid-first-name"
             >
-              Vorname
+              {t('fields.firstName')}
             </label>
             <input
               className={`${
@@ -82,7 +85,7 @@ const ContactForm = (): ReactElement => {
               className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
               htmlFor="grid-last-name"
             >
-              Nachname
+              {t('fields.lastName')}
             </label>
             <input
               className={`${
@@ -100,7 +103,7 @@ const ContactForm = (): ReactElement => {
               className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
               htmlFor="grid-password"
             >
-              E-mail
+              {t('fields.email')}
             </label>
             <input
               className={`${
@@ -122,7 +125,7 @@ const ContactForm = (): ReactElement => {
               className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
               htmlFor="grid-password"
             >
-              Nachricht
+              {t('fields.message')}
             </label>
             <textarea
               className={`${

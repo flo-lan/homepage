@@ -10,10 +10,12 @@ import React, {
   useState,
 } from 'react'
 import LanguageSwitcher from '../LanguageSwitcher/LanguageSwitcher'
+import { useTranslations } from 'next-intl'
 
 const Navbar: FunctionComponent = (props: PropsWithChildren) => {
   const { children } = props
 
+  const t = useTranslations('Layout')
   const pathname = usePathname()
   const [scrolled, setScrolled] = useState(false)
 
@@ -88,17 +90,17 @@ const Navbar: FunctionComponent = (props: PropsWithChildren) => {
             <ul className="menu menu-horizontal">
               <li>
                 <Link className="link link-hover" href="/#services">
-                  Services
+                  {t('navbar.services')}
                 </Link>
               </li>
               <li>
                 <Link className="link link-hover" href="/#portfolio">
-                  Portfolio
+                  {t('navbar.portfolio')}
                 </Link>
               </li>
               <li>
                 <Link className="link link-hover" href="/#contact">
-                  Kontakt
+                  {t('navbar.contact')}
                 </Link>
               </li>
             </ul>
@@ -111,13 +113,13 @@ const Navbar: FunctionComponent = (props: PropsWithChildren) => {
         <label htmlFor="my-drawer-3" className="drawer-overlay" />
         <ul className="menu p-4 overflow-y-auto w-80 bg-base-100">
           <li>
-            <Link href="/#services">Services</Link>
+            <Link href="/#services">{t('navbar.services')}</Link>
           </li>
           <li>
-            <Link href="/#portfolio">Portfolio</Link>
+            <Link href="/#portfolio">{t('navbar.portfolio')}</Link>
           </li>
           <li>
-            <Link href="/#contact">Kontakt</Link>
+            <Link href="/#contact">{t('navbar.contact')}</Link>
           </li>
           <LanguageSwitcher />
         </ul>

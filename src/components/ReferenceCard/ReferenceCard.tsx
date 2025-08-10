@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import React, { ReactElement } from 'react'
 import TechnologyIcon from './TechnologyIcon'
+import { useTranslations } from 'next-intl'
 
 type ReferenceCardProps = {
   title: string
@@ -10,18 +11,22 @@ type ReferenceCardProps = {
   alt: string
 }
 
-export const EmptyCard = (): ReactElement => (
-  <div className="flex items-center">
-    <div
-      className="h-fit card  bg-base-100 shadow-xl
+export const EmptyCard = (): ReactElement => {
+  const t = useTranslations('HomePage')
+
+  return (
+    <div className="flex items-center">
+      <div
+        className="h-fit card  bg-base-100 shadow-xl
     transition ease-in-out hover:-translate-y-3"
-    >
-      <div className="card-body">
-        <h2 className="card-title">Weitere Referenzen auf Anfrage</h2>
+      >
+        <div className="card-body">
+          <h2 className="card-title">{t('sections.portfolio.note')}</h2>
+        </div>
       </div>
     </div>
-  </div>
-)
+  )
+}
 
 const ReferenceCard = (props: ReferenceCardProps): ReactElement => {
   const { title, link, tags, imgSrc, alt } = props

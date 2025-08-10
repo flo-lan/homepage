@@ -1,11 +1,14 @@
 'use client'
 
 import React, { ReactElement, useState } from 'react'
+import { useTranslations } from 'next-intl'
+
 import { ServicePages } from './Services.types'
 import ServicesMenu from './ServicesMenu'
 
 const Services = (): ReactElement => {
   const [selectedMenu, setSelectedMenu] = useState(ServicePages.WebApps)
+  const t = useTranslations('HomePage.sections.services')
 
   return (
     <div className="h-full p-8 md:p-20 flex flex-col">
@@ -14,7 +17,7 @@ const Services = (): ReactElement => {
         style={{ gridTemplateRows: '50px calc(100% - 50px)' }}
       >
         <div className="col-span-2 prose pb-12">
-          <h1>Unsere Services</h1>
+          <h1>{t('title')}</h1>
         </div>
         <ServicesMenu
           onMenuClick={(servicePage: ServicePages) =>
@@ -25,20 +28,14 @@ const Services = (): ReactElement => {
         {selectedMenu === ServicePages.WebApps && (
           <>
             <article className="prose">
-              <h2>Web-Apps</h2>
-              <p>
-                Wir entwickeln Enterprise Software auf Basis von
-                State-of-the-Art Technologien um ihre Prozesse effizienter und
-                angenehmer zu gestalten. Von Backend Programmierung mit Hosting
-                + Deployment bis zu einer zugänglichen Browseranwendung sind wir
-                bemüht maßgeschneiderte und vollständige Lösungen anzubieten.
-              </p>
+              <h2>{t('webApps.title')}</h2>
+              <p>{t('webApps.description')}</p>
               <ul>
-                <li>Rapid Prototyping</li>
-                <li>Responsive Design</li>
-                <li>SEO Optimierung</li>
+                {(t.raw('webApps.features') as string[]).map((feature) => (
+                  <li>{feature}</li>
+                ))}
               </ul>
-              <h3>Technologien</h3>
+              <h3>{t('webApps.technologiesTitle')}</h3>
               <div className="flex flex-wrap gap-4">
                 <div className="badge">Typescript</div>
                 <div className="badge">React.js</div>
@@ -60,15 +57,9 @@ const Services = (): ReactElement => {
         {selectedMenu === ServicePages.MobileApps && (
           <>
             <article className="prose">
-              <h2>Mobile Apps</h2>
-              <p>
-                Mittels Platform-agnostischen Frameworks entwickeln wir in
-                Rekordzeit native Apps für iOS und Android Geräte und sparen
-                zusätzlich viel Zeit, der in die Wartung separater Software je
-                nach Platform anfallen würde. Von Produktivitäts bis zu
-                Unterhaltungs-Apps hören wir uns gerne gespannt Ihre Ideen an.
-              </p>
-              <h3>Technologien</h3>
+              <h2>{t('mobileApps.title')}</h2>
+              <p>{t('mobileApps.description')}</p>
+              <h3>{t('mobileApps.technologiesTitle')}</h3>
               <div className="flex flex-wrap gap-4">
                 <div className="badge">Android SDK</div>
                 <div className="badge">Typescript</div>
