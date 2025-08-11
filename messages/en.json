@@ -7,68 +7,64 @@
     },
     "footer": {
       "tagline": "Modern Software Solutions",
-      "company": "Firma",
+      "company": "Company",
       "aboutUs": "About us",
       "portfolio": "Portfolio",
       "contact": "Contact",
-      "legal": "Rechtliches",
+      "legal": "Legal",
       "imprint": "Imprint",
       "socials": "Socials",
       "copyright": "All rights reserved © 2022 Florian Langeder"
     }
   },
   "Imprint": {
-    "title": "Impressum",
-    "companyTitle": "Firma",
+    "title": "Imprint",
+    "companyTitle": "Company",
     "company": "Coderain e.U.",
     "address": {
       "street": "Claretinergasse 3/3/9",
-      "cityPostCode": "1220 Wien",
-      "country": "Österreich"
+      "cityPostCode": "1220 Vienna",
+      "country": "Austria"
     },
     "emailTitle": "Email",
-    "ownerTitle": "Geschäftsführer",
+    "ownerTitle": "General Manager",
     "owner": "Florian Langeder, BSc",
-    "registerNumberTitle": "Firmenbuchnummer",
+    "registerNumberTitle": "Company Register Number",
     "registerNumber": "FN581196a",
-    "vatIdTitle": "UID-Nummer",
+    "vatIdTitle": "VAT ID",
     "vatId": "ATU78157913",
-    "registerCourtTitle": "Firmenbuchgericht",
-    "registerCourt": "Handelsgericht Wien",
-    "businessActivityTitle": "Gewerbe",
-    "businessActivity": "IT-Dienstleistungen",
-    "tradeRegulationsTitle": "Gewerbeordnung",
+    "registerCourtTitle": "Company Register Court",
+    "registerCourt": "Commercial Court of Vienna",
+    "businessActivityTitle": "Business Activity",
+    "businessActivity": "IT Services",
+    "tradeRegulationsTitle": "Trade Regulations",
     "tradeRegulations": "ris.bka.gv.at",
     "bank": {
-      "title": "Bankverbindung",
+      "title": "Bank Details",
       "bankName": "Erste Bank der oesterreichischen Sparkassen AG",
       "iban": "AT24 2011 1841 4636 9100",
       "bic": "GIBAATWWXXX"
     },
-    "copyright": "© 2022 Florian Langeder — Alle Rechte vorbehalten."
+    "copyright": "All rights reserved © 2022 Florian Langeder"
   },
   "HomePage": {
     "sections": {
       "titleCard": {
         "tagline": "Modern Software Solutions",
-        "learnMore": "Mehr erfahren"
+        "learnMore": "Learn More"
       },
       "services": {
-        "title": "Unsere Services",
+        "title": "Our Services",
         "webApps": {
-          "title": "Web‑Apps",
-          "description": "Wir entwickeln Enterprise Software auf Basis von State-of-the-Art Technologien um ihre Prozesse effizienter und angenehmer zu gestalten. Von Backend Programmierung mit Hosting + Deployment bis zu einer zugänglichen Browseranwendung sind wir bemüht maßgeschneiderte und vollständige Lösungen anzubieten.",
-          "technologiesTitle": "Technologien",
-          "features": [
-            "Rapid Prototyping",
-            "Responsive Design",
-            "SEO Optimierung"
-          ]
+          "title": "Web Apps",
+          "description": "We develop enterprise software based on state-of-the-art technologies to make your processes more efficient and user-friendly. From backend programming with hosting and deployment to intuitive browser applications, we deliver tailored, end-to-end solutions.",
+          "technologiesTitle": "Technologies",
+          "features": ["Rapid Prototyping", "Responsive Design"]
         },
         "mobileApps": {
           "title": "Mobile Apps",
-          "description": "Mittels Platform-agnostischen Frameworks entwickeln wir in Rekordzeit native Apps für iOS und Android Geräte und sparen zusätzlich viel Zeit, der in die Wartung separater Software je nach Platform anfallen würde. Von Produktivitäts bis zu Unterhaltungs-Apps hören wir uns gerne gespannt Ihre Ideen an.",
-          "technologiesTitle": "Technologien"
+          "description": "Using cross-platform frameworks, we create native apps for iOS and Android in record time, saving the effort of maintaining separate software for each platform. Whether it's productivity tools or entertainment apps, we're excited to hear your ideas.",
+          "technologiesTitle": "Technologies"
         }
       },
       "portfolio": {
@@ -93,26 +89,26 @@
             "tags": ["Fullstack", "Queueing", "GraphQL"]
           }
         },
-        "note": "Weitere Referenzen auf Anfrage",
-        "webApp": "Web-App",
-        "mobileApp": "Mobile-App"
+        "note": "More references available upon request",
+        "webApp": "Web App",
+        "mobileApp": "Mobile App"
       },
       "about": {
-        "title": "Moderne Software-Dienstleistungen",
+        "title": "Modern Software Services",
         "content": {
-          "paragraph1": "Durch aktuelle Standards und stetiger Weiterbildung bieten wir einfach wartbare Lösungen an und verringern kümmern uns somit um den Bedarf von stetiger Neuentwicklung von bereits funktionierenden Systemen.",
-          "paragraph2": "Wir hören uns gerne Ihre Projektanforderungen an, ob klein oder umfangreich, bzw. Neuentwicklung oder Instandthaltung."
+          "paragraph1": "With the latest standards and continuous learning, we offer easily maintainable solutions, reducing the need for constant redevelopment of already functional systems.",
+          "paragraph2": "We're happy to discuss your project requirements - big or small, new development or ongoing maintenance."
         }
       },
       "contact": {
-        "title": "Kontaktformular",
+        "title": "Contact Form",
         "fields": {
-          "firstName": "Vorname",
-          "lastName": "Nachname",
-          "email": "E-Mail",
-          "message": "Nachricht"
+          "firstName": "First Name",
+          "lastName": "Last Name",
+          "email": "Email",
+          "message": "Message"
         },
-        "send": "Senden"
+        "send": "Send"
       }
     }
   }

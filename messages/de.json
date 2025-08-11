@@ -59,11 +59,7 @@
           "title": "Web‑Apps",
           "description": "Wir entwickeln Enterprise Software auf Basis von State-of-the-Art Technologien um ihre Prozesse effizienter und angenehmer zu gestalten. Von Backend Programmierung mit Hosting + Deployment bis zu einer zugänglichen Browseranwendung sind wir bemüht maßgeschneiderte und vollständige Lösungen anzubieten.",
           "technologiesTitle": "Technologien",
-          "features": [
-            "Rapid Prototyping",
-            "Responsive Design",
-            "SEO Optimierung"
-          ]
+          "features": ["Rapid Prototyping", "Responsive Design"]
         },
         "mobileApps": {
           "title": "Mobile Apps",

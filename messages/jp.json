@@ -1,118 +1,114 @@
 {
   "Layout": {
     "navbar": {
-      "services": "Services",
-      "portfolio": "Portfolio",
-      "contact": "Kontakt"
+      "services": "サービス",
+      "portfolio": "ポートフォリオ",
+      "contact": "お問い合わせ"
     },
     "footer": {
-      "tagline": "Modern Software Solutions",
-      "company": "Firma",
-      "aboutUs": "Über uns",
-      "portfolio": "Portfolio",
-      "contact": "Kontakt",
-      "legal": "Rechtliches",
-      "imprint": "Impressum",
-      "socials": "Socials",
-      "copyright": "Alle Rechte vorbehalten © 2022 Florian Langeder"
+      "tagline": "モダンソフトウェアソリューション",
+      "company": "会社概要",
+      "aboutUs": "企業情報",
+      "portfolio": "ポートフォリオ",
+      "contact": "お問い合わせ",
+      "legal": "法的情報",
+      "imprint": "会社情報",
+      "socials": "SNS",
+      "copyright": "All rights reserved © 2022 Florian Langeder"
     }
   },
   "Imprint": {
-    "title": "Impressum",
-    "companyTitle": "Firma",
+    "title": "会社情報",
+    "companyTitle": "会社名",
     "company": "Coderain e.U.",
     "address": {
       "street": "Claretinergasse 3/3/9",
       "cityPostCode": "1220 Wien",
-      "country": "Österreich"
+      "country": "オーストリア"
     },
-    "emailTitle": "Email",
-    "ownerTitle": "Geschäftsführer",
+    "emailTitle": "メール",
+    "ownerTitle": "代表取締役",
     "owner": "Florian Langeder, BSc",
-    "registerNumberTitle": "Firmenbuchnummer",
+    "registerNumberTitle": "商業登記番号",
     "registerNumber": "FN581196a",
-    "vatIdTitle": "UID-Nummer",
+    "vatIdTitle": "VAT番号",
     "vatId": "ATU78157913",
-    "registerCourtTitle": "Firmenbuchgericht",
-    "registerCourt": "Handelsgericht Wien",
-    "businessActivityTitle": "Gewerbe",
-    "businessActivity": "IT-Dienstleistungen",
-    "tradeRegulationsTitle": "Gewerbeordnung",
+    "registerCourtTitle": "登記所",
+    "registerCourt": "ウィーン商業裁判所",
+    "businessActivityTitle": "事業内容",
+    "businessActivity": "ITサービス",
+    "tradeRegulationsTitle": "商業規則",
     "tradeRegulations": "ris.bka.gv.at",
     "bank": {
-      "title": "Bankverbindung",
+      "title": "銀行情報",
       "bankName": "Erste Bank der oesterreichischen Sparkassen AG",
       "iban": "AT24 2011 1841 4636 9100",
       "bic": "GIBAATWWXXX"
     },
-    "copyright": "© 2022 Florian Langeder — Alle Rechte vorbehalten."
+    "copyright": "All rights reserved © 2022 Florian Langeder"
   },
   "HomePage": {
     "sections": {
       "titleCard": {
-        "tagline": "Modern Software Solutions",
-        "learnMore": "Mehr erfahren"
+        "tagline": "モダンソフトウェアソリューション",
+        "learnMore": "詳しくはこちら"
       },
       "services": {
-        "title": "Unsere Services",
+        "title": "サービス一覧",
         "webApps": {
-          "title": "Web‑Apps",
-          "description": "Wir entwickeln Enterprise Software auf Basis von State-of-the-Art Technologien um ihre Prozesse effizienter und angenehmer zu gestalten. Von Backend Programmierung mit Hosting + Deployment bis zu einer zugänglichen Browseranwendung sind wir bemüht maßgeschneiderte und vollständige Lösungen anzubieten.",
-          "technologiesTitle": "Technologien",
-          "features": [
-            "Rapid Prototyping",
-            "Responsive Design",
-            "SEO Optimierung"
-          ]
+          "title": "Webアプリ",
+          "description": "最新技術を活用し、業務プロセスを効率化し使いやすくするエンタープライズソフトウェアを開発します。バックエンドのプログラミングからホスティング、デプロイ、直感的に操作できるブラウザアプリまで、ニーズに合わせた完全なソリューションをご提供します。",
+          "technologiesTitle": "技術",
+          "features": ["ラピッドプロトタイピング", "レスポンシブデザイン"]
         },
         "mobileApps": {
-          "title": "Mobile Apps",
-          "description": "Mittels Platform-agnostischen Frameworks entwickeln wir in Rekordzeit native Apps für iOS und Android Geräte und sparen zusätzlich viel Zeit, der in die Wartung separater Software je nach Platform anfallen würde. Von Produktivitäts bis zu Unterhaltungs-Apps hören wir uns gerne gespannt Ihre Ideen an.",
-          "technologiesTitle": "Technologien"
+          "title": "モバイルアプリ",
+          "description": "クロスプラットフォームのフレームワークを使い、iOSとAndroid向けのネイティブアプリを短期間で開発します。各プラットフォームごとのメンテナンスの手間を削減し、生産性向上ツールからエンタメ系アプリまで幅広く対応します。",
+          "technologiesTitle": "技術"
         }
       },
       "portfolio": {
-        "title": "Portfolio",
+        "title": "ポートフォリオ",
         "projects": {
           "neubauprojekte": {
             "name": "neubauprojekte.wien",
             "description": "neubauprojekte.wienは、ウィーンの新築・計画中のアパートや一戸建て、地区、デベロッパー、住宅協同組合、または近くの地下鉄路線などのフィルターで効率的に物件を探せます。",
             "technicalDescription": "外部APIから物件データを自動で取り込むバックエンドを持つフルスタックのReactアプリケーションです。フロントエンドもReactで構築されており、インポートされたデータを検証、編集、公開するための管理パネルが統合されています。",
-            "tags": ["Responsive Web-App", "Deployment"]
+            "tags": ["レスポンシブWebアプリ", "デプロイ"]
           },
           "grundbuchauszug": {
             "name": "grundbuch-auszug.at",
             "description": "grundbuch-auszug.atは、登録不要で公式なオーストリアの土地登記簿（Grundbuch）および会社登記簿（Firmenbuch）の写しを、法的に有効な電子署名付きPDFで迅速かつ提供します。",
             "technicalDescription": "このプラットフォームは、Shopifyの販売データを処理するバックエンドサーバーと接続されたWordPressのフロントエンドを使用しています。キュー方式のシステムを活用して、PDFを自動生成し顧客に送信することで、スムーズで確実なドキュメント配信を実現しています。",
-            "tags": ["Shop system integration", "Backend"]
+            "tags": ["ショップシステム統合", "バックエンド"]
           },
           "uidcheck": {
             "name": "uid-check.at",
             "description": "uid-check.atは、使いやすいフロントエンドを通じて大量の付加価値税識別番号（UID）の処理を可能にし、結果を法的に有効な電子署名付きPDF証明書として提供します。",
             "technicalDescription": "このアプリケーションは、効率的なデータクエリと操作のためにGraphQLを使用したモダンなNest.jsバックエンドとして構築されています。CI/CDパイプラインを導入し、継続的な開発、テスト、デプロイをスムーズに行い、高速で信頼性の高い更新を実現しています。",
-            "tags": ["Fullstack", "Queueing", "GraphQL"]
+            "tags": ["フルスタック", "キューイング", "GraphQL"]
           }
         },
-        "note": "Weitere Referenzen auf Anfrage",
+        "note": "その他の事例はお問い合わせください",
         "webApp": "Webアプリ",
-        "mobileApp": "アプリ"
+        "mobileApp": "モバイルアプリ"
       },
       "about": {
-        "title": "Moderne Software-Dienstleistungen",
+        "title": "先進のソフトウェアサービス",
         "content": {
-          "paragraph1": "Durch aktuelle Standards und stetiger Weiterbildung bieten wir einfach wartbare Lösungen an und verringern kümmern uns somit um den Bedarf von stetiger Neuentwicklung von bereits funktionierenden Systemen.",
-          "paragraph2": "Wir hören uns gerne Ihre Projektanforderungen an, ob klein oder umfangreich, bzw. Neuentwicklung oder Instandthaltung."
+          "paragraph1": "最新の基準と継続的な学習により、メンテナンスしやすいソリューションを提供し、既存システムの再開発の必要性を減らします。",
+          "paragraph2": "小規模から大規模まで、新規開発や運用保守のご相談も承ります。"
         }
       },
       "contact": {
-        "title": "Kontaktformular",
+        "title": "お問い合わせ",
         "fields": {
-          "firstName": "Vorname",
-          "lastName": "Nachname",
-          "email": "E-Mail",
-          "message": "Nachricht"
+          "firstName": "名",
+          "lastName": "姓",
+          "email": "メールアドレス",
+          "message": "メッセージ"
         },
-        "send": "Senden"
+        "send": "送信"
       }
     }
   }
