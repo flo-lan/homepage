@@ -1,13 +1,16 @@
 import Image from 'next/image'
 import React, { ReactElement } from 'react'
-import TechnologyIcon from './TechnologyIcon'
 import { useTranslations } from 'next-intl'
+
+import TechnologyIcon from './TechnologyIcon'
 
 type ReferenceCardProps = {
   title: string
   link: string
   tags?: string[]
   imgSrc: string
+  description: string
+  technicalDescription: string
   alt: string
 }
 
@@ -29,13 +32,14 @@ export const EmptyCard = (): ReactElement => {
 }
 
 const ReferenceCard = (props: ReferenceCardProps): ReactElement => {
-  const { title, link, tags, imgSrc, alt } = props
+  const { title, link, tags, imgSrc, description, technicalDescription, alt } =
+    props
 
   return (
     <a href={link} target="_blank" rel="noopener noreferrer">
       <div
-        className="card  bg-base-100 shadow-xl
-    transition ease-in-out hover:-translate-y-3"
+        className="card bg-base-100 shadow-xl
+    transition ease-in-out hover:-translate-y-3 w-80 sm:w-96"
       >
         <figure style={{ height: '150px' }}>
           <Image src={imgSrc} alt={alt} height={150} width={300} />
@@ -46,6 +50,9 @@ const ReferenceCard = (props: ReferenceCardProps): ReactElement => {
             <div className="divider divider-horizontal" />
             <TechnologyIcon type="Web" />
           </h2>
+          <p>{description}</p>
+          <div className="divider"></div>
+          <p>{technicalDescription}</p>
           {tags && tags.length > 0 && (
             <div className="card-actions justify-end">
               {tags.map((tag) => (

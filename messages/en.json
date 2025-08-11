@@ -76,14 +76,26 @@
         "projects": {
           "neubauprojekte": {
             "name": "neubauprojekte.wien",
+            "description": "neubauprojekte.wien showcases new and upcoming apartments, houses, and renovated flats in Vienna, with filters for districts, developers, housing cooperatives, or nearby U-Bahn lines to make finding a home easier.",
+            "technicalDescription": "Full-stack React application with a backend that automatically imports property data from an external API. The frontend, built with React, also includes an integrated admin panel to validate, edit, and publish the imported data.",
             "tags": ["Responsive Web-App", "Deployment"]
           },
           "grundbuchauszug": {
             "name": "grundbuch-auszug.at",
+            "description": "grundbuch-auszug.at offers quick access to official Austrian land register (Grundbuch) and company register (Firmenbuch) extracts, delivered as legally valid, electronically signed PDFs without requiring user registration.",
+            "technicalDescription": "The platform uses a WordPress frontend connected to a backend server that processes Shopify sales. It utilizes a queue-based system to automatically generate and send PDFs to customers, ensuring smooth and reliable document delivery.",
             "tags": ["Shop system integration", "Backend"]
+          },
+          "uidcheck": {
+            "name": "uid-check.at",
+            "description": "uid-check.at enables the processing of large volumes of VAT identification numbers (UID) through a user-friendly frontend and provides the results as legally valid, electronically signed PDF certificates.",
+            "technicalDescription": "The application is built as a modern Nest.js backend using GraphQL for efficient data querying and manipulation. It incorporates CI/CD pipelines to streamline ongoing development, testing, and deployment, ensuring fast and reliable updates.",
+            "tags": ["Fullstack", "Queueing", "GraphQL"]
           }
         },
-        "note": "Weitere Referenzen auf Anfrage"
+        "note": "Weitere Referenzen auf Anfrage",
+        "webApp": "Web-App",
+        "mobileApp": "Mobile-App"
       },
       "about": {
         "title": "Moderne Software-Dienstleistungen",

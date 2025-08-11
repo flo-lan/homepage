@@ -65,8 +65,6 @@ const Services = (): ReactElement => {
                 <div className="badge">Typescript</div>
                 <div className="badge">React Native</div>
                 <div className="badge">Expo</div>
-                <div className="badge">Flutter</div>
-                <div className="badge">Dart</div>
               </div>
             </article>
             <div
